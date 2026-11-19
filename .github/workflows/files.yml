@@ -1,0 +1,17 @@
+name: File Manipulation
+
+on:
+  workflow_dispatch:
+
+jobs:
+  file-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Maak directory en bestand aan
+        run: |
+          mkdir -p mijn_map
+          echo "Hallo vanuit GitHub Actions" > mijn_map/info.txt
+      - name: Toon inhoud
+        run: |
+          ls -la mijn_map
+          cat mijn_map/info.txt
