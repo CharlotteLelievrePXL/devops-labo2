@@ -1,4 +1,4 @@
-name: Steps Examples
+name: Labo 2 - Steps Example
 
 on:
   workflow_dispatch:
